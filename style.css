@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #202733;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 24px 0;
+    padding: 22px;
+    background: white;
+    border: 1px solid #dce1e8;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.color-card {
+    overflow: hidden;
+    border: 1px solid #d5d9df;
+    border-radius: 8px;
+    background: white;
+}
+
+.color-preview {
+    height: 95px;
+    border-bottom: 1px solid #d5d9df;
+}
+
+.color-info {
+    padding: 12px;
+    overflow-wrap: anywhere;
+}
+
+.color-info h3 {
+    margin: 0 0 8px;
+}
+
+.color-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+form {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9c1cc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #7ba7f7;
+    border-color: #477fe8;
+}
+
+button {
+    justify-self: start;
+    margin-top: 12px;
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 6px;
+    background: #2864d7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e4fae;
+}
+
+.error {
+    color: #c62828;
+    font-size: 13px;
+}
+
+.success {
+    color: #207245;
+    font-weight: bold;
+}
+
+#emptyMessage {
+    color: #657080;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

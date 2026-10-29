@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Палітра кольорів</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Палітра кольорів</h1>
+
+        <section>
+            <h2>Додані кольори</h2>
+            <div id="palette" class="palette"></div>
+            <p id="emptyMessage">Поки що кольорів немає. Додайте перший колір нижче.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Додати новий колір</h2>
+
+            <form id="colorForm" novalidate>
+                <label for="colorName">Назва кольору</label>
+                <input type="text" id="colorName" autocomplete="off">
+                <span class="error" id="nameError"></span>
+
+                <label for="colorType">Тип кольору</label>
+                <select id="colorType">
+                    <option value="RGB">RGB</option>
+                    <option value="RGBA">RGBA</option>
+                    <option value="HEX">HEX</option>
+                </select>
+
+                <label for="colorCode">Код кольору</label>
+                <input type="text" id="colorCode" placeholder="Наприклад: 255, 0, 0" autocomplete="off">
+                <span class="error" id="codeError"></span>
+
+                <button type="submit">Save</button>
+            </form>
+
+            <p id="successMessage" class="success"></p>
+        </section>
+    </main>
+</body>
+</html>
